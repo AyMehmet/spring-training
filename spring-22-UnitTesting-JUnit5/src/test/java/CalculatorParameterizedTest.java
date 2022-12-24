@@ -26,7 +26,7 @@ public class CalculatorParameterizedTest {
     }
 
     @ParameterizedTest
-    @MethodSource("stringProvider")
+    @MethodSource("stringProvider")         // If the method is in different class -> ClassName#stringProvider
     void testCase4(String arg) {
         Assertions.assertFalse(arg.isEmpty());
     }

@@ -24,6 +24,8 @@ public class StudentController {
     @GetMapping("/students")
     public List<StudentDTO> getStudents() {
         return studentService.getStudents();
+        // new StudentDTO("John", "Doe", 20),
+        // new StudentDTO("Tom", "Hanks", 50)
     }
 
 }

@@ -66,4 +66,8 @@ class TaskServiceImplTest {
 
     }
 
+    // Given user is logged in
+    // When user goes to home page
+    // Then user is able to see their avatar/profile picture
+
 }

@@ -31,14 +31,14 @@ class ProjectServiceImplTest {
     @Test
     void getByProjectCode_Test() {
 
-        // Given
+        // Given        --      Preparation of the test
         when(projectRepository.findByProjectCode(anyString())).thenReturn(new Project());   // Stubbing
         when(projectMapper.convertToDto(any(Project.class))).thenReturn(new ProjectDTO());
 
-        // When
+        // When         --      Execution of the real method
         ProjectDTO projectDTO = projectService.getByProjectCode(anyString());
 
-        // Then
+        // Then         --      Verification and assertion
         InOrder inOrder = inOrder(projectRepository, projectMapper);  // I want to check the order of these 2 Mocks
 
         inOrder.verify(projectRepository).findByProjectCode(anyString());   // We are providing in which order these 2 Mocks should be

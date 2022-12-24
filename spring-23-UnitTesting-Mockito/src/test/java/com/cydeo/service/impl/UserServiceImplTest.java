@@ -16,13 +16,15 @@ import static org.mockito.Mockito.*;
 class UserServiceImplTest {
 
     @Mock
-    UserRepository userRepository;
+    UserRepository userRepository;      // Mock object instead of UserRepository object
 
     @Mock
     UserMapper userMapper;
 
     @InjectMocks
     UserServiceImpl userService;
+
+//    UserServiceImpl userService = new UserServiceImpl(userRepository, userMapper, projectService, taskService);
 
     @Test
     void findByUserName_Test() {
