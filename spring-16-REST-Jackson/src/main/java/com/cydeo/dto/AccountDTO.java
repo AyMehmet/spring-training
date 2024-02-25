@@ -21,7 +21,7 @@ public class AccountDTO {
     private Integer age;
     private String postalCode;
 
-    @JsonBackReference  // This field is not going to be serialized
+    @JsonBackReference  // This field is not going to be serialized which means this field is not seen in Account DTO.
     private UserDTO user;
 
 }

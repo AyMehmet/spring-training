@@ -1,4 +1,4 @@
-INSERT INTO EMPLOYEES(id,name)
+INSERT INTO EMPLOYEEES(id,name)
 VALUES(1,'Mike');
 
 INSERT INTO students(first_name,last_name,email)

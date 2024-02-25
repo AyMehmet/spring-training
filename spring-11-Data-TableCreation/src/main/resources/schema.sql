@@ -1,6 +1,6 @@
-drop table if exists employees;
+drop table if exists employeees;
 
-create table EMPLOYEES(
+create table EMPLOYEEES(
 
                           id bigint not null,
                           name varchar(255),
